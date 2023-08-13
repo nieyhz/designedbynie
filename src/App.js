@@ -1,24 +1,56 @@
-import logo from './logo.svg';
 import './App.css';
+import { useEffect, useState } from 'react';
+import ReactFullpage from '@fullpage/react-fullpage';
+import SecondScreen from './screens/SecondScreen';
+import ThirdScreen from './screens/ThirdScreen';
+import FourthScreen from './screens/FourthScreen';
+import LandingScreen from './screens/LandingScreen';
+import FifthScreen from './screens/FifthScreen';
+import SixthScreen from './screens/SixthScreen';
+import MenuScreen from './screens/MenuScreen';
+import Toolbar from './components/Toolbar'
+import MoonScreen from './screens/MoonScreen'
+import Loader from './components/Loader'
+import LightComponent from './components/LightComponent';
+import CylinderScreen from './screens/CylinderScreen';
 
 function App() {
+
+
+  useEffect(() => {
+    document.title = 'designed.by.nie';
+  }, []);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Loader>
+      <ReactFullpage
+      //fullpage options
+      licenseKey = {'YOUR_KEY_HERE'}
+      responsiveWidth = {600}
+      scrollingSpeed = {1000} /* Options here */
+
+      render={({ state, fullpageApi }) => {
+        return (
+          <ReactFullpage.Wrapper>
+            <div className="section">
+              <CylinderScreen />
+            </div>
+            <div className="section">
+              <MoonScreen />
+            </div>
+            <div className="section">
+              <FourthScreen /> 
+            </div>
+            <div className="section">
+              <ThirdScreen />
+            </div>
+          </ReactFullpage.Wrapper>
+        );
+      }}
+      />
+    </Loader>
+    </>
   );
 }
 
