@@ -10,13 +10,14 @@ const CylinderScreen = () =>{
 
     return(
         <>
-        <div className='twContainer'>
-                        <TypeWriter />
-                    </div>
-            <Canvas camera={{ position: [19, 0, 0]}} className='canvas'>
+        <Canvas camera={{ position: [19, 0, 0]}} className='canvas' style={{backgroundImage : 'none'}}>
                 <Cylinder />
                 <LightComponent />
             </Canvas>
+        <div className='twContainer'>
+                        <TypeWriter />
+                    </div>
+            
         </>
     )
 }

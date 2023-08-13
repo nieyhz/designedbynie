@@ -278,7 +278,8 @@ h5{
   align-items: center;
   color: #F5F5F7;
   position: absolute;
-  z-index: 101;
+  z-index: 10100;
+  top: 0;
 }
 
 .leftKim{
