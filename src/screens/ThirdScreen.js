@@ -25,6 +25,7 @@ import greenforest from '../images/greenforest.png'
 import greenforestLine from '../images/greenforestLine.png'
 import schimic from '../images/schimic.png'
 import schimicLine from '../images/schimicLine.png'
+import LiteYouTubeEmbed from 'react-lite-youtube-embed'
 
 const ThirdScreen = () =>{
 
@@ -40,15 +41,16 @@ const ThirdScreen = () =>{
                     <Work 
                         name = 'Graphic design contest - 1st place'
                         year = '2012'
-                        content = {<iframe width="70%" height="30%" src="https://www.youtube.com/embed/lPQ8_czZtdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>}
                         text = 'I delved into graphic design at the age of 13, this was my first win in a graphic contest.'
                         tag = {<div className='tag'>graphic</div>}
+                        content = { <Fragment>
+                            <div className='linkButton'>go to: youtube.com/justarta46</div>
+                        </Fragment>}
                     />
                     <Work 
                         name = 'Call of Duty Clan'
                         text = 'I got into the gaming world, started working with clans which they used to ask me for logos, YouTube covers and layouts, 3D intros and more.'
                         tag = {<div className='tag'>branding</div>}
-                        content = {<iframe width="70%" height="30%" src="https://www.youtube.com/embed/AMoDzrn3jdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>}
                     />
                     <Work 
                         name = 'Habplus - Habbo retroserver'

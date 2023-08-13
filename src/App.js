@@ -1,17 +1,10 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
-import SecondScreen from './screens/SecondScreen';
 import ThirdScreen from './screens/ThirdScreen';
 import FourthScreen from './screens/FourthScreen';
-import LandingScreen from './screens/LandingScreen';
-import FifthScreen from './screens/FifthScreen';
-import SixthScreen from './screens/SixthScreen';
-import MenuScreen from './screens/MenuScreen';
-import Toolbar from './components/Toolbar'
 import MoonScreen from './screens/MoonScreen'
 import Loader from './components/Loader'
-import LightComponent from './components/LightComponent';
 import CylinderScreen from './screens/CylinderScreen';
 
 function App() {

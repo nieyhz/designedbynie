@@ -1,6 +1,7 @@
 import React from 'react';
 import  { useState } from "react";
 import '../App.css';
+import Draggable from 'react-draggable';
 
 const Lovelist = (props) =>{
         
@@ -13,32 +14,9 @@ const Lovelist = (props) =>{
         const [position, setPosition] = useState({ x: randomX, y: randomY });
         const [initialPosition, setInitialPosition] = useState({ x: 0, y: 0 });
 
-        const handleMouseDown = (e) => {
-          setIsDragging(true);
-          setInitialPosition({ x: e.clientX, y: e.clientY });
-        };
-      
-        const handleMouseMove = (e) => {
-          if (!isDragging) return;
-      
-          const dx = e.clientX - initialPosition.x;
-          const dy = e.clientY - initialPosition.y;
-      
-          setPosition((prevPosition) => ({
-            x: prevPosition.x + dx,
-            y: prevPosition.y + dy,
-          }));
-      
-          setInitialPosition({ x: e.clientX, y: e.clientY });
-        };
-      
-        const handleMouseUp = () => {
-          setIsDragging(false);
-        };
-
-
 
     return(
+      <Draggable>
         <div className='square'
              style={{
                 position: "absolute",
@@ -46,10 +24,7 @@ const Lovelist = (props) =>{
                 top: position.y,
                 opacity: 0.5,
                 cursor: isDragging ? "grabbing" : "grab",
-             }}
-             onMouseDown={handleMouseDown}
-             onMouseMove={handleMouseMove}
-             onMouseUp={handleMouseUp}>
+             }}>
             <div className='topBar'>
                 {props.name}
                 <div className='close'></div>
@@ -63,7 +38,8 @@ const Lovelist = (props) =>{
 
             </div>
             <input className='loveInput' placeholder='Type yours'></input>
-        </div>
+          </div>
+        </Draggable>
     );
 };
 

@@ -516,6 +516,15 @@ h5{
   background-position: right;
 }
 
+@keyframes canvasIntro {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 .buttonRow{
   display: flex; 
   flex-grow: 1;
@@ -603,7 +612,7 @@ a {
 }
 
 .bioContainer > p:hover{
-  background-color: #CC89B1;
+  background-color: #D14E7E;
 }
 
 .loveInput{
@@ -645,6 +654,13 @@ a {
   position: fixed;
   top: 0;
   z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yt{
+  width: 70%;
 }
 
 .mobileFav{
@@ -661,7 +677,7 @@ a {
       margin: 15px;
     }
     .canvas{
-      background-size: 135%;
+      background-size: 75%;
     }
     .bioContainer{
       width: 80%;
