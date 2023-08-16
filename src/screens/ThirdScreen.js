@@ -9,6 +9,8 @@ import poster5 from '../images/poster5.png'
 import poster6 from '../images/poster6.png'
 import poster9 from '../images/poster4.jpg'
 import poster10 from '../images/poster5.jpg'
+import social1 from '../images/social.png'
+import social2 from '../images/social2.png'
 import logo from '../images/logo.png'
 import video from '../images/video.mp4'
 import videoFluffig from '../images/fluffig.mp4'
@@ -25,7 +27,6 @@ import greenforest from '../images/greenforest.png'
 import greenforestLine from '../images/greenforestLine.png'
 import schimic from '../images/schimic.png'
 import schimicLine from '../images/schimicLine.png'
-import LiteYouTubeEmbed from 'react-lite-youtube-embed'
 
 const ThirdScreen = () =>{
 
@@ -41,7 +42,7 @@ const ThirdScreen = () =>{
                     <Work 
                         name = 'Graphic design contest - 1st place'
                         year = '2012'
-                        text = 'I delved into graphic design at the age of 13, this was my first win in a graphic contest.'
+                        text = 'First approach with design, first requests from YouTube.'
                         tag = {<div className='tag'>graphic</div>}
                         content = { <Fragment>
                             <div className='linkButton'>go to: youtube.com/justarta46</div>
@@ -49,7 +50,7 @@ const ThirdScreen = () =>{
                     />
                     <Work 
                         name = 'Call of Duty Clan'
-                        text = 'I got into the gaming world, started working with clans which they used to ask me for logos, YouTube covers and layouts, 3D intros and more.'
+                        text = 'Got into gaming world, started working with clans which used to ask me logos, YouTube covers and layouts, 3D intros and more.'
                         tag = {<div className='tag'>branding</div>}
                     />
                     <Work 
@@ -68,7 +69,7 @@ const ThirdScreen = () =>{
                     <Work 
                         name = 'Graduation in Graphic Design'
                         year = '2018'
-                        text = 'Graduation in Graphic design & photography'
+                        text = 'Graduation in Graphic design & photography at C. Golgi, Brescia'
                         tag = {<div className='tag'>graphic</div>}
                         content = { <Fragment>
                                         <img alt='banana' src={poster1} className='workImage'></img>
@@ -92,6 +93,29 @@ const ThirdScreen = () =>{
                                         </div>
                                     </Fragment>}
                     />
+                    <Work 
+                        name = 'Social media management'
+                        year = '2019'
+                        customer = {<Fragment>
+                            <h3>Customer:</h3><p>Terrazza Triclinium - lounge bar</p><p>Borgo Carni - meat shop</p><p>Pasticceria Savoldi - pastry shop</p></Fragment>}
+                        text = ''
+                        tag = {<div className='tag'>graphic</div>}
+                        content = { <Fragment>
+                                        <img alt='banana' src={social1} className='workImage'></img>
+                                        <img alt='banana' src={social2} className='workImage'></img>
+                                    </Fragment>}
+                    />
+                    <Work 
+                        name = ''
+                        customer = {<Fragment>
+                            <h3>Customer:</h3><p>Green Forest Food srls</p></Fragment>}
+                        text = 'Minimal design in dark-green shades, the company sells mushrooms and forest food like wildberries and slugs.'
+                        tag = {<div className='tag'>graphic</div>}
+                        content = { <Fragment>
+                            <img alt='banana' src={greenforest} className='workImage' style={{ marginBottom: '15px', width: '29%'}}></img>
+                            <img alt='banana' src={greenforestLine} className='workImage' style={{ marginBottom: '15px', width: '29%'}}></img>
+                        </Fragment>}
+                    />
                 </div>
                 <div className='archiveCol'>
                     <Work 
@@ -102,6 +126,8 @@ const ThirdScreen = () =>{
                     />
                     <Work 
                         name = 'Autism project'
+                        customer = {<Fragment>
+                            <h3>Customer:</h3><p>Politecnico di Milano</p></Fragment>}
                         text = 'With politecnico we studied for months the autistic world and then developed a series of products for helping the autistic kids.'
                         tag = {<div className='tag'>product</div>}
                         content = { <Fragment>
@@ -109,16 +135,7 @@ const ThirdScreen = () =>{
                         </Fragment>}
                     />
                     <Work 
-                        name = 'Logo design'
-                        text = 'Logo for a mushroom trading company'
-                        tag = {<div className='tag'>graphic</div>}
-                        content = { <Fragment>
-                            <img alt='banana' src={greenforest} className='workImage' style={{ marginBottom: '15px', width: '29%'}}></img>
-                            <img alt='banana' src={greenforestLine} className='workImage' style={{ marginBottom: '15px', width: '29%'}}></img>
-                        </Fragment>}
-                    />
-                    <Work 
-                        name = 'Logo design'
+                        name = ''
                         text = 'Logo for a social club.'
                         tag = {<div className='tag'>graphic</div>}
                         content = { <Fragment>
@@ -135,8 +152,10 @@ const ThirdScreen = () =>{
                         </Fragment>}
                     />
                     <Work 
-                        name = 'Logo design'
-                        text = 'Logo for a softair gunshop.'
+                        name = ''
+                        text = 'The shape is inspired by the original Risiko® tank with the T as the cannon and the B as the backside. '
+                        customer = {<Fragment>
+                            <h3>Customer:</h3><p>Tactical brain</p></Fragment>}
                         tag = {<div className='tag'>graphic</div>}
                         content = { <Fragment>
                             <img alt='banana' src={tacticalbrain} className='workImage' style={{ marginBottom: '15px' }}></img>
@@ -193,6 +212,8 @@ const ThirdScreen = () =>{
                     />
                     <Work 
                         name = 'Leda collection'
+                        customer = {<Fragment>
+                            <h3>Customer:</h3><p>Politecnico di Milano</p></Fragment>}
                         text = 'Leda is a minimalistic lamp we made in our product course. The project started from scratch till the 1:1 prototype made out of steel, aluminium, both powder-coated.'
                         tag = {<div className='tag'>product</div>}
                         content = { <Fragment>
@@ -211,6 +232,8 @@ const ThirdScreen = () =>{
                     <Work 
                         name = 'Design for the food&beverage next-gen'
                         year = '2023'
+                        customer = {<Fragment>
+                            <h3>Customer:</h3><p>EPTA Iarp + Politecnico di Milano</p></Fragment>}
                         text = 'Student project with IARP, a multionational company that is leader in the Food&Beverage market. We develop together a solution for next-generation restaurants like dark kitchen, cloud kitchen and ghost kitchen.'
                         tag = {<div className='tag'>product</div>}
                         content = { <Fragment>

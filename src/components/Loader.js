@@ -8,7 +8,7 @@ const Loader = ({ children }) => {
     // Replace this with your actual data fetching or loading logic.
     setTimeout(() => {
       setLoading(false);
-    }, 3000); // Simulating a 2-second loading time. Adjust as needed.
+    }, 5000); // Simulating a 2-second loading time. Adjust as needed.
 
     // Clean up the effect
     return () => {

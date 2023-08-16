@@ -10,6 +10,9 @@ const Work = (props) =>{
             {props.tag}
             {props.content}
             <p>
+            {props.customer}
+            </p>
+            <p>
             {props.text}
             </p>
         </div>

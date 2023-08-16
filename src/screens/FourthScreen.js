@@ -53,6 +53,7 @@ const FourthScreen = () =>{
                             content = 'Runaway - Ye'
                         />
                     </div>
+                    
                     <div className='loveRow'>
 
                         <Lovelist
@@ -70,6 +71,7 @@ const FourthScreen = () =>{
                             content = 'Once upon a time in Hollywood - TARANTINO'
                         />
                     </div>
+
                     <div className='loveRow'>
                         <Lovelist 
                             name = 'fav.color'
